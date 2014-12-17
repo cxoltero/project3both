@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name restaurantProAppApp.controller:AboutCtrl
+ * @name restaurantProAppApp.controller:TasksCtrl
  * @description
- * # AboutCtrl
+ * # TasksCtrl
  * Controller of the restaurantProAppApp
  */
 angular.module('restaurantProAppApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('TasksCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
