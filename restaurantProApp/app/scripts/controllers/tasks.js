@@ -1,17 +1,17 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name restaurantProAppApp.controller:TasksCtrl
- * @description
- * # TasksCtrl
- * Controller of the restaurantProAppApp
- */
-angular.module('restaurantProAppApp')
-  .controller('TasksCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+
+
+var app = angular.module("restaurantProAppApp", []);
+
+app.controller("TasksCtrl", function($scope, $http) {
+  $http.get('localhost:3000/tasks.json').
+    success(function(data, status, headers, config) {
+      $scope.tasks = data;
+    }).
+    error(function(data, status, headers, config) {
+      // log error
+    });
+});
+
+

@@ -44,6 +44,34 @@ body {
   }
 }
 
+/* for the nav tags on the top right of the screen */
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,.nav-pills > li > a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius:4px;
+/*  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #FF6600;*/
+  color: #red !important;
+  /*background-color: transparent !important;*/
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius:4px;
+  /*border-bottom-width: 4px;
+  border-bottom-style: solid;*/
+  /*border-bottom-color: #FF6600;*/
+  color: #red !important;
+  background-color: orange !important;
+}
+
+
+
 
 /* Custom page footer */
 .footer {
@@ -99,6 +127,9 @@ body {
     margin-bottom: 20px;
     a{
     color: white;
+    }
+    ul{
+      font-size: 16px;
     }
   }
   /* Remove the bottom border on the jumbotron for visual effect */

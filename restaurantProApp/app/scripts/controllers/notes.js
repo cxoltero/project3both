@@ -8,10 +8,19 @@
  * Controller of the restaurantProAppApp
  */
 angular.module('restaurantProAppApp')
-  .controller('NotesCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('NotesCtrl', function ($scope, $http) {
+    var notesAPI = {};
+
+    notesAPI.getTitles = function() {
+      return $http({
+        method: 'JSONP', 
+        url: 'localhost:3000/notes'
+      });
+    }
+
+    return notesAPI;
   });
+
+
+
+

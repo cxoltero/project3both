@@ -9,9 +9,13 @@
  */
 angular.module('restaurantProAppApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    // $scope.awesomeThings = [
+    //   'HTML5 Boilerplate',
+    //   'AngularJS',
+    //   'Karma'
+    // ];
+    $(document).ready(function() {
+    	alert('you better be ready');
+    console.log( 'not ready' );
+	});
+});
